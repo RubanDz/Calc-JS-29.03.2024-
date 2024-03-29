@@ -1,0 +1,41 @@
+.btn {
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid rgb(196, 53, 28);
+        background-color: rgb(196, 53, 28);
+        transition-duration: .4s;
+    }
+    &_operatio:hover {
+        border: 1px solid rgb(73, 28, 196);
+        background-color: rgb(73, 28, 196);
+    }
+    &_clear:hover {
+        border: 1px solid rgb(6, 63, 9);
+        background-color: rgb(6, 63, 9);
+    }
+    &_equal:hover {
+        border: 1px solid rgb(216, 133, 24);
+        background-color: rgb(216, 133, 24);
+    }
+    &-num-0 {
+       grid-area: 5 / 1 / 6 / 3;
+    }
+    &_equal {
+        grid-area: 4 / 4 / 6 /5;
+    }
+    &-plus {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+    &-minus {
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+    }
+}
+        
+       
