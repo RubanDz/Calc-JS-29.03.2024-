@@ -8,6 +8,8 @@ const btnNumPoint = document.getElementById('point');
 const btnEqual = document.querySelector('.btn_equal');
 const screenInput = document.getElementById('input');
 
+// const btnMinus = document.querySelector('.btn-minus');
+
 //Объявление переменных для операндов и операторов
 let operand1 = '';
 let operand2 = '';
@@ -119,6 +121,35 @@ btnNumPoint.addEventListener('click', () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Добавить оператор "-" возможность вставить перед цифрой
+
+// btnMinus.addEventListener('click', () => {
+//     if (!operator) {
+//         operand1 = '-' + operand1;
+//         screenInput.value = operand1;
+//     } else {
+//         operand2 = '-' + operand2;
+//         screenInput.value = operand2;
+//     }
+// });
 
 
 
