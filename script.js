@@ -86,7 +86,7 @@ clearCE.addEventListener('click', () => {
         operand2 = operand2.slice(0, -1);
         screenInput.value = operand1 + operator + operand2;
     }
-})
+});
 
 
 btnNumPoint.addEventListener('click', () => {
@@ -101,7 +101,7 @@ btnNumPoint.addEventListener('click', () => {
             screenInput.value = operand2;
         }
     }
-})
+});
     
 
 
