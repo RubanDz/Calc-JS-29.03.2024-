@@ -17,15 +17,15 @@
   <main class="calc-container">
    <div class="calc">
       <div class="calc__screen-container">
-         <input class="calc-screen" type="text" placeholder="0">
+         <input class="calc-screen" id="input" type="text" placeholder="0">
       </div>
       <div class="calc__btn-container">
          <button type="button" id="clearCE" class="btn btn_clear">CE</button>
          <button type="button" id="clearC" class="btn btn_clear">C</button>
-         <button type="button" class="btn btn_operation">/</button>
-         <button type="button" class="btn btn_operatio">*</button>
-         <button type="button" class="btn btn_operatio btn-plus">+</button>
-         <button type="button" class="btn btn_operatio btn-minus">-</button>
+         <button type="button" class="btn btn_operation btn-division">/</button>
+         <button type="button" class="btn btn_operation btn-multiplication">*</button>
+         <button type="button" class="btn btn_operation btn-plus">+</button>
+         <button type="button" class="btn btn_operation btn-minus">-</button>
          <button type="button" class="btn btn_equal">=</button>
 
          <button type="button" class="btn btn-num-1">1</button>
@@ -38,7 +38,7 @@
          <button type="button" class="btn btn-num-8">8</button>
          <button type="button" class="btn btn-num-9">9</button>
          <button type="button" class="btn btn-num-0">0</button>
-         <button type="button" class="btn btn-num-point">.</button>
+         <button type="button" id="point" class="btn btn-num-point">.</button>
 
       </div>
    </div>
