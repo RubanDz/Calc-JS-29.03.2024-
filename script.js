@@ -8,12 +8,13 @@ const btnNumPoint = document.getElementById('point');
 const btnEqual = document.querySelector('.btn_equal');
 const screenInput = document.getElementById('input');
 
-// const btnMinus = document.querySelector('.btn-minus');
 
-//Объявление переменных для операндов и операторов
+
+//Объявление переменных для операндов и операторов (Глобальная зона видимости)
 let operand1 = '';
 let operand2 = '';
 let operator = '';
+// let result = null;
 
 //выполняет математические операции в зависимости от значения переменной operator
 //И выводит значения на экран ввода
@@ -39,7 +40,8 @@ function calculator() {
                         default :
                         result = 'Error :)';
     }
-    screenInput.value = result; //То же, что и result
+    screenInput.value = result; //То же, что и result, здесь отображение результата
+   
     operand1 = ''; // сбрасывает в пустую строку operand1, после выполнения операции
     operand2 = ''; // сбрасывает в пустую строку operand2, после выполнения операции
     operator = ''; //сбрасывает в пустую строку operator, после выполнения операции
@@ -48,12 +50,12 @@ function calculator() {
  //Обработка событий для кнопок Numbers 
     btnNumAll.forEach(button => {
        button.addEventListener('click', () => {
-        if (!operator) {
-            operand1 += button.textContent;
+        if (!operator) { // проверка установленного оператора (+, -, /, *)
+            operand1 += button.textContent; // если оператора нет, цифра добавляется
             screenInput.value = operand1; // значения на экране
         } else {
-            operand2 += button.textContent;
-            screenInput.value = operand2; // значение на экране
+            operand2 += button.textContent; // если оператор установлен цифра сохраняется во второй переменной
+            screenInput.value = operand2; // значение на экране в соответствии с вводом пользователя
         }
     }); 
  });
@@ -83,6 +85,7 @@ clearC.addEventListener('click', () => {
     operand1 = ''; //обнуление значений переменных
     operand2 = '';
     operator = '';
+    // result = null;
     screenInput.value = ''; //все данные и операторы сбрасываются, экран очищается
 });
 
@@ -132,6 +135,8 @@ btnNumPoint.addEventListener('click', () => {
 
 
 
+// сделать так, что бы результат вычеслений можно было использовать повторно!
+// возможно объявить переменную result за пределами цикла
 
 
 
@@ -139,17 +144,6 @@ btnNumPoint.addEventListener('click', () => {
 
 
 
-//Добавить оператор "-" возможность вставить перед цифрой
-
-// btnMinus.addEventListener('click', () => {
-//     if (!operator) {
-//         operand1 = '-' + operand1;
-//         screenInput.value = operand1;
-//     } else {
-//         operand2 = '-' + operand2;
-//         screenInput.value = operand2;
-//     }
-// });
 
 
 
