@@ -1,4 +1,6 @@
 'use strict';
+//Мое решение)
+
 // Объявление переменных и элементов DOM
 const clearCE = document.getElementById('clearCE');
 const clearC = document.getElementById('clearC');
@@ -124,19 +126,19 @@ btnNumPoint.addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // сделать так, что бы результат вычеслений можно было использовать повторно!
 // возможно объявить переменную result за пределами цикла
+// точка сохраняется только один раз
+
+
+
+
+
+
+
+
+
+
 
 
 

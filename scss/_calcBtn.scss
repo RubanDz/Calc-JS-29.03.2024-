@@ -3,6 +3,10 @@
     font-size: 2rem;
     border-radius: 5px;
     border: 1px solid grey;
+    &:active {
+        transform: scale(0.9);
+        transition-duration: .1s;
+    }
 
     &:hover {
         cursor: pointer;

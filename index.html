@@ -17,7 +17,7 @@
   <main class="calc-container">
    <div class="calc">
       <div class="calc__screen-container">
-         <input class="calc-screen" id="input" type="text" placeholder="0">
+         <input class="calc-screen" name="numbers" maxlength="15" id="input" type="text" placeholder="0000000000000000" readonly>
       </div>
       <div class="calc__btn-container">
          <button type="button" id="clearCE" class="btn btn_clear">CE</button>
@@ -26,19 +26,19 @@
          <button type="button" class="btn btn_operation btn-multiplication">*</button>
          <button type="button" class="btn btn_operation btn-plus">+</button>
          <button type="button" class="btn btn_operation btn-minus">-</button>
-         <button type="button" class="btn btn_equal">=</button>
+         <button type="button" name="equal" id="equal" class="btn btn_equal">=</button>
 
-         <button type="button" class="btn btn-num-1">1</button>
-         <button type="button" class="btn btn-num-2">2</button>
-         <button type="button" class="btn btn-num-3">3</button>
-         <button type="button" class="btn btn-num-4">4</button>
-         <button type="button" class="btn btn-num-5">5</button>
-         <button type="button" class="btn btn-num-6">6</button>
-         <button type="button" class="btn btn-num-7">7</button>
-         <button type="button" class="btn btn-num-8">8</button>
-         <button type="button" class="btn btn-num-9">9</button>
-         <button type="button" class="btn btn-num-0">0</button>
-         <button type="button" id="point" class="btn btn-num-point">.</button>
+         <button type="button" class="btn btn-num-1 digit">1</button>
+         <button type="button" class="btn btn-num-2 digit">2</button>
+         <button type="button" class="btn btn-num-3 digit">3</button>
+         <button type="button" class="btn btn-num-4 digit">4</button>
+         <button type="button" class="btn btn-num-5 digit">5</button>
+         <button type="button" class="btn btn-num-6 digit">6</button>
+         <button type="button" class="btn btn-num-7 digit">7</button>
+         <button type="button" class="btn btn-num-8 digit">8</button>
+         <button type="button" class="btn btn-num-9 digit">9</button>
+         <button type="button" class="btn btn-num-0 digit">0</button>
+         <button type="button" id="point" class="btn btn-num-point digit">.</button>
 
       </div>
    </div>
@@ -66,7 +66,8 @@
    
    
 
- <script src="./script.js"></script>
+ <!-- <script src="./script.js"></script> -->
+ <script src="./scriptTwo.js"></script>
 </body>
 </html>
    
