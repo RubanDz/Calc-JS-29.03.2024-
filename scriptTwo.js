@@ -1,29 +1,24 @@
 'use strict';
 //Calculator IT Step 07/04/2024
-
 const screenInput = window.document.querySelector('.calc-screen');
 const calc = document.querySelector('.calc__btn-container');
 const clearBtn = document.getElementById('clearC');
 const clearBtnCE = document.getElementById('clearCE');
-const equal = document.getElementById('equal');
-const digits = document.querySelectorAll('.digit');
-
-
-
+//
 const OPERATORS = {
     division : '/',
     multiplication : '*',
     plus : '+',
     minus : '-',
 };
-
+//
 const calculateData = {
     num1 : '',
     num2 : '',
     sign : '',
     result : '',
 };
-
+//
 function minus(num1, num2) {
     return (+num1) - (+num2)
 }
@@ -36,7 +31,7 @@ function plus(num1, num2) {
 function division(num1, num2) {
     return (+num1) / (+num2)
 }
-
+//
 function calculate(num1, num2, sign) {
     switch (sign) {
         case OPERATORS.plus :
@@ -68,7 +63,7 @@ function calculate(num1, num2, sign) {
         if (event.target.classList.contains('digit')) {
             const pressNum = event.target.textContent;
 
-            if(calculate.sign === '') {
+            if(calculateData.sign === '') {
                 screenInput.value += pressNum;
                 calculateData.num1 = screenInput.value;
             } else {
@@ -104,7 +99,7 @@ function calculate(num1, num2, sign) {
     });
 
     
-// изучить и отредактировать код
+
           
            
         
